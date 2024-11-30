@@ -5,7 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - fn_filmproductions</title>
   <link rel="icon" type="image/jpg" id="favicon" href="favicon.png">
-  <link rel="stylesheet" href="mobile.css">
+  <link id="stylesheet" rel="stylesheet" href="mobile.css">
+  <script>
+      function updateStylesheet() {
+          const stylesheet = document.getElementById("stylesheet");
+          if (window.innerWidth <= 768) {
+              stylesheet.href = "mobile.css";
+          } else {
+              stylesheet.href = "styles.css";
+          }
+      }
+      
+      updateStylesheet();
+      window.addEventListener("resize", updateStylesheet);
+  </script>
 </head>
 <body>
   <header>
@@ -19,12 +32,12 @@
   </section>
 
   <section class="info">
-    <article>
+    <article class="firstArticle">
       <h1>High Quality Videos</h1>
       Hi! I'm a passionate hobby filmmaker and I like to shoot bike videos and cinematic short films.<br>
     </article>
     <div class="center">
-      <a href="#gallery"><button>view my work</button></a>
+      <a href="#gallery"><button class="a" style="padding-inline: 2rem; padding-block: .3rem;  border-radius: 1rem;">view my work</button></a>
     </div>
   </section>
 
@@ -34,10 +47,12 @@
       <!--<a class="a">See all</a>-->
       <div class="spacer"></div>
       <div class="galleryGrid">
-        <img src="pic1-v1.png">
-        <img src="pic3-v1.png">
-        <img src="pic4-v1.png">
-        <img src="pic6-v1.png">
+        <img src="pic1-v1.png" alt="picture not available">
+        <img src="pic3-v1.png" alt="picture not available">
+        <img src="pic4-v1.png" alt="picture not available">
+        <img src="pic6-v1.png" alt="picture not available">
+        <img src="" alt="picture not available">
+        <img src="" alt="picture not available">
       </div>
       <p>biker: <a class="a" href="https://www.instagram.com/guem.mel/">@guem.mel</a>, camera: <a class="a" href="https://www.instagram.com/bike_tobi/">@bike_tobi</a></p>
     </article>
