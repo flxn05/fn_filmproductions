@@ -1,0 +1,128 @@
+:root {
+  --theme: #101114;
+  --element: #070a10;
+  --text: lightgrey;
+}
+* {
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--theme);
+  margin: 0;
+  padding-top: 5rem;
+}
+.favicon {
+  border-radius: 50%;
+}
+header {
+  background-color: var(--element);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+  font-weight: bold;
+  z-index: 9;
+}
+.header * {
+  text-align: center;
+  width: 33vw;
+  font-weight: bold;
+}
+.logo {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.menu {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.wideVideo,
+.wideVideo video {
+  width: 100vw;
+}
+h1 {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text);
+  font-size: 1.66rem;
+}
+article {
+  padding-inline: 1rem;
+  margin-block: 4rem;
+}
+.a {
+  padding: 6px;
+  background-color: var(--theme);
+  filter: brightness(1.5);
+  border-radius: 6px;
+  text-decoration: none;
+  text-shadow: #4975cd 0 0 1rem;
+  font-size: .75rem;
+  text-decoration: none;
+}
+.galleryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-content: center; /* Centers grid items horizontally */
+  align-items: center; /* Centers grid items vertically */
+  justify-items: center; /* Centers each item inside its grid cell */
+}
+
+.galleryGrid * {
+  height: calc(50vw - 2rem - 6vw);
+  width: calc(50vw - 2rem);
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 0 2rem black;
+}
+button {
+  background-color: transparent;
+  font-size: .9rem;
+  border:  1px solid rgba(255, 255, 255, 0.75);
+  padding-block: .1rem;
+  padding-inline: .5rem;
+  border-radius: 1rem;
+  text-shadow: #3b5892 0 0 1rem;
+  text-decoration: none;
+}
+p {
+  text-align: center;
+  font-style: italic;
+  font-size: .75rem;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spacer {
+  height: 1rem;
+}
+.footer {
+  margin-top: 6rem;
+  background-color: var(--element);
+  margin-bottom: 0;
+}
+.footerArticle {
+  background-color: var(--element);
+  margin-bottom: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: .66rem;
+  color: grey;
+}
